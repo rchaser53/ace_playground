@@ -11,9 +11,12 @@
       default
         div above 2
     h1 {{hoge}}
+    child
 </template>
 
 <script>
+import child from './components/child'
+
 export default {
   name: 'App',
   data() {
@@ -21,6 +24,8 @@ export default {
       hoge: 22
     }
   },
-  components: {}
+  components: {
+    child
+  }
 }
 </script>
